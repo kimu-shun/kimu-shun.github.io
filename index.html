@@ -1,38 +1,120 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Sample Site</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
 
+        header {
+            margin-bottom: 30px;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid #ccc;
+        }
+
+            nav a {
+                text-decoration: none;
+                color: #333;
+                font-weight: bold;
+                font-size: 18px;
+            }
+
+                nav a:hover {
+                    color: #0066cc;
+                }
+
+        h1.display-5 {
+            font-weight: bold;
+            color: #333;
+        }
+
+        section {
+            margin-bottom: 40px;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 6px rgba(0,0,0,0.1);
+        }
+
+        pre {
+            background-color: #272822;
+            color: #f8f8f2;
+            padding: 15px;
+            border-radius: 6px;
+            overflow-x: auto;
+        }
+
+        a.lead {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+            a.lead:hover {
+                text-decoration: underline;
+            }
+    </style>
 </head>
 <body>
-<header>
+    <header>
+        <nav>
+            <a href="index.html">ゲーム</a>
+        </nav>
+        <div class="container">
+            <h1 class="display-5 fst-italic">ゲーム一覧</h1>
+            <p class="updated-date">更新日：2025年6月1日</p>
 
-</header>
-<main>
-    <div class="container mt-5 py-5">
-        <div class="p-4 rounded bg-body-secondary">
-            <h1 class="display-5 fst-italic">げーむ</h1>
         </div>
+    </header>
 
-    </div>
+    <main>
+        <!-- ゲームタイトル -->
+        <section>
+            <h2>ゲームタイトル：Runゲーム</h2>
+            <p><strong>製作期間：</strong>一週間</p>
+            <p><strong>感想：</strong>このゲームはシンプルなランニングゲームですが、基本的なゲームループを学べてとても勉強になりました。ただ障害物をよけるのではなくアイテムをとってスコアを増やしたり
+            一時的に無敵になれるようにました。ステージの障害物やアイテムをランダムで生成させるようにしてゲームが単調にならないようにしました。</p>
+            <p><strong>操作方法：</strong>A ： 左に移動　D ： 右移動</p>
+            <p><a class="lead" href="runrunGame/">Runゲームを遊ぶ！</a></p>
+        </section>
 
-    <div>
-        <p class="lead"><a href="runrunGame/">Runゲームを遊ぶ！</a></p>
-    </div>
+        <section>
+            <h2>ゲームタイトル：Puzzleゲーム</h2>
+            <p><strong>製作期間：</strong>一週間</p>
+            <p><strong>感想：</strong>このゲームはフルーツマウンテンというゲームを模倣して製作しました。工夫した点は、同じフルーツが当たったらほかのフルーツを生成させるときに変な場所に生成されないように、
+                当たった両オブジェクトの位置をとりそれを足して2で割ることで当たったオブジェクトの真ん中の位置をとりそこに新たなフルーツを生成させようにしました。</p>
+            <p><strong>操作方法：</strong>A ： お皿を回転　D ： お皿を回転　左クリック ： フルーツを投げる</p>
+            <p><a class="lead" href="puzzleGame/">Puzzleゲームを遊ぶ！</a></p>
+        </section>
 
-        <p class="lead"><a href="puzzleGame/">Puzzleゲームを遊ぶ！</a></p>
-    </div>
+        </section>
 
-    </div>
-        <p class="lead"><a href="Shooting/">Shootingゲームを遊ぶ！</a></p>
-    </div>
+        <section>
+            <h2>ゲームタイトル：Shootingゲーム</h2>
+            <p><strong>製作期間：</strong>一週間</p>
+            <p><strong>感想：</strong>シンプルな2D横スクロールシューティングを製作しました。敵キャラを3体作ってキャラごとに遠距離攻撃をしてくるやHPが０になったら分裂など特徴を持たせた敵キャラを製作しました。</p>
+            <p><strong>操作方法：</strong>A ： 左移動 ： 右移動 左クリック ： 銃を打つ スペースキー ： ジャンプ</p>
+            <p><a class="lead" href="Shooting/">Shootingゲームを遊ぶ！</a></p>
+        </section>
 
-    </div>
-        <p class="lead"><a href="2DActioinGame/">2DActioinGameを遊ぶ</a></p>
-    </div>
-</main>
+        <section>
+            <h2>ゲームタイトル：2DActioinGameゲーム</h2>
+            <p><strong>製作期間：</strong>一週間</p>
+            <p><strong>感想：</strong>シンプルな2D横スクロールアクションゲームを製作しました。</p>
+            <p><strong>操作方法：</strong>A ： 左移動 ： 右移動 左クリック ： 銃を打つ スペースキー ： ジャンプ</p>
+            <p><a class="lead" href="Shooting/">Shootingゲームを遊ぶ！</a></p>
+        </section>
+        
+    </main>
 
 </body>
 </html>
