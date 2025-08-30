@@ -10,7 +10,7 @@
   </head>
   <body>
     <div id="unity-container">
-      <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=1920 height=1080 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -57,11 +57,11 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/Card.loader.js";
+      var loaderUrl = buildUrl + "/CardGame.loader.js";
       var config = {
-        dataUrl: buildUrl + "/Card.data.unityweb",
-        frameworkUrl: buildUrl + "/Card.framework.js.unityweb",
-        codeUrl: buildUrl + "/Card.wasm.unityweb",
+        dataUrl: buildUrl + "/CardGame.data.unityweb",
+        frameworkUrl: buildUrl + "/CardGame.framework.js.unityweb",
+        codeUrl: buildUrl + "/CardGame.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "CardGame",

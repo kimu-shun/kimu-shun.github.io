@@ -1,9 +1,9 @@
 const cacheName = "DefaultCompany-CardGame-1.0";
 const contentToCache = [
-    "Build/Card.loader.js",
-    "Build/Card.framework.js.unityweb",
-    "Build/Card.data.unityweb",
-    "Build/Card.wasm.unityweb",
+    "Build/CardGame.loader.js",
+    "Build/CardGame.framework.js.unityweb",
+    "Build/CardGame.data.unityweb",
+    "Build/CardGame.wasm.unityweb",
     "TemplateData/style.css"
 
 ];
