@@ -1,207 +1,152 @@
 <!DOCTYPE html>
-<html lang="ja">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Kimu Portfolio</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 20px;
-            background-color: #f9f9f9;
-        }
-
-        header {
-            margin-bottom: 30px;
-        }
-
-        nav {
-            display: flex;
-            gap: 20px;
-            padding-bottom: 20px;
-            border-bottom: 2px solid #ccc;
-        }
-
-            nav a {
-                text-decoration: none;
-                color: #333;
-                font-weight: bold;
-                font-size: 18px;
-            }
-
-                nav a:hover {
-                    color: #0066cc;
-                }
-
-        h1.display-5 {
-            font-weight: bold;
-            color: #333;
-        }
-
-        section {
-            margin-bottom: 40px;
-            background: #fff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 0 6px rgba(0,0,0,0.1);
-        }
-
-        pre {
-            background-color: #272822;
-            color: #f8f8f2;
-            padding: 15px;
-            border-radius: 6px;
-            overflow-x: auto;
-        }
-
-        a.lead {
-            color: #0066cc;
-            text-decoration: none;
-        }
-
-            a.lead:hover {
-                text-decoration: underline;
-            }
-    </style>
-</head>
-<body>
-    <header>
-        <nav>
-            <a href="index.html">ゲーム</a>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="ToyPair website" />
+        <meta name="author" content="Mariani Francesco Paolo" />
+		<link rel="canonical" href="https://kiliken.github.io/" />
+        <title>ToyPair</title>
+        <link rel="icon" type="image/x-icon" href="img/smolicon.png" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,400;0,800;1,400;1,800&family=Saira+Extra+Condensed:wght@500;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap" rel="stylesheet">        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+		<link rel="stylesheet" href="highlight/styles/github-dark.css">
+		<script src="highlight/highlight.min.js"></script>
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none"> <img class="img-fluid mx-auto mb-2" id="random-logo" width="35" src="img/mylogo.svg" alt="..." /></span>
+				<span class="d-none d-lg-block"> <img class="img-fluid img-profile mx-auto mb-2"id="random-logo-big" src="img/mylogo.svg" alt="..." /> </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+					<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#plan">Planning</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#arts">2D Design</a></li>
+					<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#models">3D Design</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#prog">Programming</a></li>
+					
+					<!-- Language Change-->
+					<li class="nav-item"><p class="nav-link js-scroll-trigger" href="#more"></a></li>
+					<li class="nav-item"><a class="nav-link js-scroll-trigger" id="langSwitch" href="index.html?lang=en">English</a></li>
+                </ul>
+            </div>
         </nav>
-        <div class="container">
-            <h1 class="display-5 fst-italic">ゲーム一覧</h1>
-            <p class="updated-date">更新日：2026年1月31日</p>
-
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- Title-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <img src="img/TitleLogo.png" class="img-fluid">
+					<p class="lead mb-5" id="aboutGame">
+						
+					</p>
+                </div>
+            </section>
+			<hr class="m-0" />
+            <!-- Planning -->
+            <section class="resume-section" id="plan">
+                <div class="resume-section-content">
+                    <h2 class="mb-5" id="plan-title">プランニング (Planning)</h2>
+					<div class="renderer" id="plan-contents">
+						<!-- Marked.js output goes here -->
+					</div>
+                  </div>
+            </section>
+            <hr class="m-0" />
+            <!-- 2D Design -->
+            <section class="resume-section" id="arts">
+                <div class="resume-section-content" id="exp">
+                    <h2 class="mb-5" id="2d-title">2Dデザイン (2D Design)</h2>
+					<div class="renderer" id="des2D-contents">
+						<!-- Marked.js output goes here -->
+					</div>
+                </div>
+            </section>
+            <hr class="m-0" />
+			<!-- 3D Design -->
+            <section class="resume-section" id="models">
+                <div class="resume-section-content" id="cert">
+                    <h2 class="mb-5" id="3d-title">3Dデザイン (3D Design)</h2>
+					<div class="renderer" id="des3D-contents">
+						<!-- Marked.js output goes here -->
+						<!-- Ref https://modelviewer.dev/ for model display -->
+					
+					</div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Programming -->
+            <section class="resume-section" id="prog">
+                <div class="resume-section-content" id="edu">
+                    <h2 class="mb-5" id="pro-title">プログラミング (Programming)</h2>
+                    <div class="renderer" id="pro-contents">
+						<!-- Marked.js output goes here -->
+					</div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            
         </div>
-    </header>
-
-    <main>
-        <!-- ゲームタイトル -->
-        <section>
-            <h2>ゲームタイトル：Runゲーム</h2>
-            <p><strong>製作期間：</strong>一週間</p>
-            <p><strong>感想：</strong>このゲームはシンプルなランニングゲームですが、基本的なゲームループを学べてとても勉強になりました。ただ障害物をよけるのではなくアイテムをとってスコアを増やしたり
-            一時的に無敵になれるようにました。ステージの障害物やアイテムをランダムで生成させるようにしてゲームが単調にならないようにしました。</p>
-            <p><strong>操作方法：</strong>A ： 左に移動　D ： 右移動</p>
-            <p><a class="lead" href="runrunGame/">Runゲームを遊ぶ！</a></p>
-        </section>
-
-        <section>
-            <h2>ゲームタイトル：Puzzleゲーム</h2>
-            <p><strong>製作期間：</strong>一週間</p>
-            <p><strong>感想：</strong>このゲームはフルーツマウンテンというゲームを模倣して製作しました。工夫した点は、同じフルーツが当たったらほかのフルーツを生成させるときに変な場所に生成されないように、
-                当たった両オブジェクトの位置をとりそれを足して2で割ることで当たったオブジェクトの真ん中の位置をとりそこに新たなフルーツを生成させようにしました。</p>
-            <p><strong>操作方法：</strong>A ： お皿を回転　D ： お皿を回転　左クリック ： フルーツを投げる</p>
-            <p><a class="lead" href="puzzleGame/">Puzzleゲームを遊ぶ！</a></p>
-        </section>
-
-        <section>
-            <h2>ゲームタイトル：Shootingゲーム</h2>
-            <p><strong>製作期間：</strong>一週間</p>
-            <p><strong>感想：</strong>シンプルな2D横スクロールシューティングを製作しました。敵キャラを3体作ってキャラごとに遠距離攻撃をしてくるやHPが０になったら分裂など特徴を持たせた敵キャラを製作しました。</p>
-            <p><strong>操作方法：</strong>A ： 左移動 ： 右移動 左クリック ： 銃を打つ スペースキー ： ジャンプ</p>
-            <p><a class="lead" href="Shooting/">Shootingゲームを遊ぶ！</a></p>
-        </section>
-
-        <section>
-            <h2>ゲームタイトル：2DActioinGameゲーム</h2>
-            <p><strong>製作期間：</strong>一週間</p>
-            <p><strong>感想：</strong>シンプルな2D横スクロールアクションゲームを製作しました。</p>
-            <p><strong>操作方法：</strong>A ： 左移動 ： 右移動 左クリック ： 銃を打つ スペースキー ： ジャンプ</p>
-            <p><a class="lead" href="2DActioinGame/">2DActioinGameゲームを遊ぶ！</a></p>
-        </section>
-
-       <section>
-            <h2>ゲームタイトル：TowerDefenseゲーム</h2>
-            <p><strong>製作期間：</strong>1週間</p>
-            <p><strong>感想：</strong>タワーディフェンスゲームを製作しました。敵キャラの移動を設定したポジションをすべて通るように移動するコードを書きました。</p>
-            <p><strong>操作方法：</strong>マウスでゲーム画面下のカードをドラック&ドロップで何もないマスに置く</p>
-            <p><a class="lead" href="TowerDefense/">TowerDefenseゲームを遊ぶ！</a></p>
-        </section>
-
-       <section>
-            <h2>ゲームタイトル：Quizゲーム</h2>
-            <p><strong>製作期間：</strong>1週間</p>
-            <p><strong>感想：</strong>時間制限のあるクイズゲームを製作しました。スクリプタブルオブジェクトを使用して問題を管理しました。</p>
-            <p><strong>操作方法：</strong>マウスクリック</p>
-            <p><a class="lead" href="QuizGame/">Quizゲームを遊ぶ！</a></p>
-        </section>
-
-       <section>
-            <h2>ゲームタイトル：Racingゲーム</h2>
-            <p><strong>製作期間：</strong>1週間</p>
-            <p><strong>感想：</strong>レーシングゲームを製作しました。WheelColliderを使ってタイヤの制御を行ってみました。</p>
-            <p><strong>操作方法：</strong>W、A、S、D ：移動　　Shift : ブレーキ</p>
-            <p><a class="lead" href="Racing/">Racingゲームを遊ぶ！</a></p>
-        </section>
-
-        <section>
-            <h2>ゲームタイトル：Cardゲーム</h2>
-            <p><strong>製作期間：</strong>1週間</p>
-            <p><strong>感想：</strong>ターン制のカードゲームを製作しました。どのカードで何が起きるのかわかりにくいのでそこを改善したいです。</p>
-            <p><strong>操作方法：</strong>マウスでドラック&ドロップ</p>
-            <p><a class="lead" href="CardGame/">Cardゲームを遊ぶ！</a></p>
-        </section>
-
-        <section>
-            <h2>ゲームタイトル：EscapeRoom</h2>
-            <p><strong>製作期間：</strong>一週間</p>
-            <p><strong>感想：</strong>脱出ゲームを制作しました。簡単な謎解きでクリアできるようになっています。</p>
-            <p><strong>操作方法：</strong>S : 左の部屋に移動 D : 右の部屋に移動　左クリック : 調べるく</p>
-            <p><a class="lead" href="Escape/">EscapeRoomを遊ぶ！</a></p>
-        </section>
-
-        <section>
-            <h2>ゲームタイトル：MouseSlashGame</h2>
-            <p><strong>製作期間：</strong>一週間</p>
-            <p><strong>感想：</strong>このゲームは空から落ちてくるフルーツを切るゲームです。ゲームルールができていないためそこを今後制作していきたいと思っています。制限時間を設けてどのくらい切れたかなどをひょじさせたいです。</p>
-            <p><strong>操作方法：</strong>マウスを振り回す</p>
-            <p><a class="lead" href="MouseSlash/">MouseSlashゲームを遊ぶ！</a></p>
-        </section>
-
-        <section>
-            <h2>ゲームタイトル：MazeGame</h2>
-            <p><strong>製作期間：</strong>一週間</p>
-            <p><strong>感想：</strong>ダンジョンを自動生成で行い、Playerがそこを探索してゴールを目指すゲームを作りました。暗闇にして迷路感を出しました。</p>
-            <p><strong>操作方法：</strong>W : 上に移動　S : 下に移動 A ： 左に移動　D ： 右移動</p>
-            <p><a class="lead" href="MazeGame/">Mazeゲームを遊ぶ！</a></p>
-        </section>
-
-        <section>
-            <h2>ゲームタイトル：InvaderGame</h2>
-            <p><strong>製作期間：</strong>一週間</p>
-            <p><strong>感想：</strong>インベーダーゲームを元に制作したゲームです。プレイヤーは玉を一つずつしか打てないようにして少し難易度を上げています。敵は横に一緒に動くようにして統一感を出しました。</p>
-            <p><strong>操作方法：</strong>A ： 左に移動　D ： 右移動　Space : 玉を発射</p>
-            <p><a class="lead" href="InvaderGame/">Invaderゲームを遊ぶ！</a></p>
-        </section>
-
-        <section>
-            <h2>ゲームタイトル：CraneGame</h2>
-            <p><strong>製作期間：</strong>一週間</p>
-            <p><strong>感想：</strong>クレーンゲームを制作しました。見た目が寂しいので今後ブラッシュアップしていき、ゲットした商品を見れるようにしたいです。</p>
-            <p><strong>操作方法：</strong>A ： 左に移動　D ： 右移動　Enter : 下におろしてつかむ</p>
-            <p><a class="lead" href="CraneGame/">Craneゲームを遊ぶ！</a></p>
-        </section>
-
-        <section>
-            <h2>ゲームタイトル：ワニワニパニック</h2>
-            <p><strong>製作期間：</strong>一週間</p>
-            <p><strong>感想：</strong>ワニワニパニックを元に制作しました。果物を食べられるとゲームオーバーになるという要素を追加しました。</p>
-            <p><strong>操作方法：</strong>マウスクリック左クリックでワニをたたく</p>
-            <p><a class="lead" href="WaniWaniPanic/">ワニワニパニックゲームを遊ぶ！</a></p>
-        </section>
-
-
-        <section>
-            <h2>ゲームタイトル：BurgerGame</h2>
-            <p><strong>製作期間：</strong>一週間</p>
-            <p><strong>感想：</strong>このゲームは空から落ちてくるハンバーガーの素材を拾ってスコアを増やしていくゲームです。バンズで挟むとゲームが終わってスコアが表示されるようになっています。しっかりと素材が上に積みあがることができるようにしました。</p>
-            <p><strong>操作方法：</strong>A ： 左に移動　D ： 右移動</p>
-            <p><a class="lead" href="SkyBurger/">Burgerゲームを遊ぶ！</a></p>
-        </section>
-        
-    </main>
-
-</body>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+		<!-- Core theme JS-->
+		<script src="./js/marked.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script type="module" src="js/dataScript.js"></script>
+		<script type="module">
+			import { Localize } from "./js/dataScript.js";
+			import { getUrlParameter } from "./js/dataScript.js";
+			import { loadMarkdown } from "./js/dataScript.js";
+			
+			var planContent = "./data/en_plan.md";
+			var des2dContent = "./data/en_des2d.md";
+			var des3dContent = "./data/en_des3d.md";
+			var proContent = "./data/en_pro.md";
+			
+			document.addEventListener('DOMContentLoaded', async () => {
+				
+				const titleIcon = document.getElementById("random-logo");
+				const titleIconBig = document.getElementById("random-logo-big");
+				
+				const randomNum = Math.floor(Math.random() * 9) + 1;
+				
+				titleIcon.src = `./img/SubChara_${randomNum}.png`;
+				titleIconBig.src =`./img/SubChara_${randomNum}.png`;
+				
+				const lang = getUrlParameter("lang") ?? "jp";
+				Localize(lang);
+				planContent = `./data/${lang}_plan.md`;
+				des2dContent = `./data/${lang}_des2d.md`;
+				des3dContent = `./data/${lang}_des3d.md`;
+				proContent = `./data/${lang}_pro.md`;
+				
+				if(lang === "en") {
+					
+					const langButton = document.getElementById("langSwitch");
+					langButton.href="index.html?lang=jp";
+					langButton.textContent="日本語";
+				}
+				
+				await Promise.all([
+					loadMarkdown( planContent, "plan-contents"),
+					loadMarkdown( des2dContent, "des2D-contents"),
+					loadMarkdown( des3dContent, "des3D-contents"),
+					loadMarkdown( proContent, "pro-contents")
+				]);
+			
+				hljs.highlightAll();
+				
+			});
+		</script>
+    </body>
 </html>
