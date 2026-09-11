@@ -401,7 +401,7 @@ private void LimitPosOnFixedUpdate()
 
 ---
 
-## 木村 俊 (プログラマーリーダー)
+## 木村 駿 (プログラマーリーダー)
 
 ### プログラムリーダー
 
